@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Nifty Colors</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes"> 
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="chromatic circle for ui designers and web developers" />
+	<meta name="keywords" content="chromatic of ui designers"/>
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="CodeNifty">
+    <script src="https://kit.fontawesome.com/650016c90f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="Icon nifty colors" href="img/favicon.png">  
+</head>
+<body>
+
+	<header class="header" >
+		<h1 class="header__title" ><b>N</b>ifty <b>C</b>olors</h1>
+	</header>
+
+	<main class="chromatic" data-chromatic="main">
+		<section class="chromatic__container">
+			<div class="chromatic__circle" data-chromatic="colors"></div>
+			<div class="chromatic__ranges">
+			 	<input class="chromatic__range-r chromatic__range"  type="range" min="0" max="255" value="0">
+			 	<input class="chromatic__range-g chromatic__range"  type="range" min="0" max="255" value="0">
+			 	<input class="chromatic__range-b chromatic__range"  type="range" min="0" max="255" value="1">
+			 	<input class="chromatic__range-a chromatic__range"  type="range" min="0" max="1" step="0.01"  value="1" >
+			</div>
+			<div class="chromatic__buttons">
+			 	<div class="chromatic__button-colors">
+			 		<label>Hex</label>
+			 		<input type="text" data-chromatic="hexInput" value="#000000" > 
+			 		<label class="rgb" >Rgb</label>
+			 		<input type="text"  data-chromatic="rgbInput" value="0,0,0"> 
+			 		<label class="rgba" >Rgba</label>
+			 		<input type="text"  data-chromatic="rgbaInput" value="0,0,0,0"> 
+			 	</div>
+			 	<div class="chromatic__button-copy">
+			 	 	<button type="button" data-chromatic="copyHex">Copy Hex</button>
+			 	 	<button type="button" data-chromatic="copyRgb">Copy Rgb</button>
+			 	 	<button type="button" data-chromatic="copyRgba">Copy Rgba</button>
+			 	</div>
+			</div>
+			<div class="chromatic__controls">
+				<button type="button" data-chromatic="showColor">Show the color</button>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer" >
+		<p >Nifty Colors - All rights reserved</p>
+		<p class="text" >Creator <a href="https://api.whatsapp.com/send?phone=5573999690996&text=Ol%C3%A1!%20desejo%20seus%20servi%C3%A7os%2C%20de%20desenvolvimento%20web." >CodeNifty</a></p>
+		<ul class="footer__contact" >
+			<li><a href="https://t.me/DKSecurity"><i class="fab fa-telegram-plane"></i></a>
+			<li><a href="https://api.whatsapp.com/send?phone=5573999690996&text=Ol%C3%A1!%20desejo%20seus%20servi%C3%A7os%2C%20de%20desenvolvimento%20web." ><i class="fab fa-whatsapp"></i></a></li>
+			<li><a href="https://www.instagram.com/dksecurityofc?r=nametag" ><i class="fab fa-instagram"></i></a></li>
+			<li><a href="mailto:dkwebmasterofc@gmail.com?subject=Olá!%20desejo%20seus%20serviços%20de%20desenvolvimento%20web."><i class="fas fa-envelope"></i></a></li>
+		</ul>
+	</footer>
+	
+	<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

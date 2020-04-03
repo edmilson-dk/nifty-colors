@@ -46,39 +46,39 @@ function appliesTheColorCodeOnTheDispay(colors_hex, colors_rgb, color_alpha_rgba
 
 function colorchromaticInitiator(){
     $button_copy_color_hex.addEventListener('click', () => {
-	    $view_finder_hex.select();
-	    document.execCommand('copy');
-	}, false);
+	$view_finder_hex.select();
+	document.execCommand('copy');
+    }, false);
 	
-	$button_copy_color_rgb.addEventListener('click', () => {
-	    $view_finder_rgb.select();
-	    document.execCommand('copy');
-	}, false),
+    $button_copy_color_rgb.addEventListener('click', () => {
+	$view_finder_rgb.select();
+	document.execCommand('copy');
+    }, false),
 	
     $button_copy_color_rgba.addEventListener('click', () => {
         $view_finder_rgba.select();
         document.execCommand('copy');
     }, false);
 
-	$circle_colors.addEventListener('click', () => {
-	    $view_finder_hex.select();
-	    document.execCommand('copy')
-	}, false);
+    $circle_colors.addEventListener('click', () => {
+	$view_finder_hex.select();
+	document.execCommand('copy')
+    }, false);
 	
-	$button_show_color.addEventListener('click', () => {
-	    applyBackgroundInMain(all_colors_rgb, code_color_alpha);
-	}, false);
+    $button_show_color.addEventListener('click', () => {
+	applyBackgroundInMain(all_colors_rgb, code_color_alpha);
+    }, false);
 	
-	$all_range_inputs_colors.forEach((element_color, index) => {
-	    $range_color_rgb_alpha.addEventListener('input', () => {
-	        code_color_alpha = $range_color_rgb_alpha.value;
-	    }, false);
-
-	    element_color.addEventListener('input', () => {
-	        all_colors_rgb[index] = element_color.value;
-	        applyBackgroundInCircle(all_colors_rgb, code_color_alpha);
-	    }, false);
-	});
+    $all_range_inputs_colors.forEach((element_color, index) => {
+	$range_color_rgb_alpha.addEventListener('input', () => {
+	    code_color_alpha = $range_color_rgb_alpha.value; 
+        }, false);
+	  
+    	element_color.addEventListener('input', () => {
+	    all_colors_rgb[index] = element_color.value;
+	    applyBackgroundInCircle(all_colors_rgb, code_color_alpha);
+	}, false);
+    });
 }
 
 window.addEventListener('load', colorchromaticInitiator, false);

@@ -1,1 +1,1 @@
-# nifty-chromatic
+# Nifty Colors

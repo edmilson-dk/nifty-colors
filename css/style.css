@@ -80,6 +80,7 @@ a { text-decoration: none;}
 	width: 90%;
 	margin: 0 0 15px 0;
 	border-radius: 10px;
+        outline: none;
 	-webkit-appearance: none;
 	appearance: none;
 }
@@ -127,6 +128,7 @@ a { text-decoration: none;}
 .chromatic__range-r::-moz-range-track { background: linear-gradient(90deg, transparent, #f00);}
 .chromatic__range-g::-moz-range-track { background: linear-gradient(90deg, transparent, #0f0);}
 .chromatic__range-b::-moz-range-track { background: linear-gradient(90deg, transparent, #00f);}
+.chromatic__range-a::-moz-range-track { background: linear-gradient(90deg, #fff, #000);}
 
 /* IE */
 .chromatic__range::-ms-thumb{
@@ -146,6 +148,7 @@ a { text-decoration: none;}
 .chromatic__range-r::-ms-track { background: linear-gradient(90deg, transparent, #f00);}
 .chromatic__range-g::-ms-track { background: linear-gradient(90deg, transparent, #0f0);}
 .chromatic__range-b::-ms-track { background: linear-gradient(90deg, transparent, #00f);}
+.chromatic__range-a::-ms-track { background: linear-gradient(90deg, #fff, #000);}
 
 .chromatic__buttons {
 	width: 100%;
